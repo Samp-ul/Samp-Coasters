@@ -1,0 +1,123 @@
+name: Bug or crash report
+description: Something isn't working, or the game crashes with this mod installed.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this! The more you fill in, the faster it can get fixed.
+
+        **Crashing?** The crash report matters most. You'll find it in the `crash-reports` folder of your Minecraft instance. Attach it in the log box near the bottom.
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      description: Shown in the mod's file name or in your launcher's mod list (ideally you should be using the latest version but just incase).
+      placeholder: e.g. 1.0.3
+    validations:
+      required: true
+
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      placeholder: e.g. 26.2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod loader
+      options:
+        - Fabric
+    validations:
+      required: true
+
+  - type: input
+    id: loader-version
+    attributes:
+      label: Loader version
+      description: Shown in your launcher, or near the top of the crash report.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: side
+    attributes:
+      label: Where does it happen?
+      options:
+        - In my game (singleplayer, or while playing on a server)
+        - On a dedicated server
+        - Both
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem, and what you expected to happen instead.
+      placeholder: The game crashes on the loading screen when...
+The game crashes when I try to do...
+The game crashes when I use another mod...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can I reproduce this? For a crash on startup, just say so.
+      placeholder: |
+        1. Install this mod together with ...
+        2. Launch the game
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: Other mods
+      description: |
+        If you think another mod is involved, give its name and exact version. If it's a port or fork, link the one you're using.
+        Otherwise, list the mods you play with or link your modpack.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: only-this-mod
+    attributes:
+      label: Does it still happen with only this mod installed?
+      description: If you can, test with just this mod and its required dependencies. It's the quickest way to tell a bug from a mod conflict.
+      options:
+        - Yes, it happens with only this mod and its dependencies
+        - No, it only happens with certain other mods installed
+        - I haven't tested this
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Crash report or log
+      description: |
+        Drag the file into this box to attach it, or upload it to https://mclo.gs and paste the link. Please don't paste the whole log as text.
+
+        - **Crash:** the newest file in the `crash-reports` folder
+        - **No crash report, or not a crash:** `logs/latest.log`
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: I searched the existing issues and this hasn't been reported yet.
+          required: true
+        - label: I'm using the latest version of this mod for my Minecraft version.
+          required: true
