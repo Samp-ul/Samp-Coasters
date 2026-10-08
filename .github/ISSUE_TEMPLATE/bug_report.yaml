@@ -36,7 +36,7 @@ body:
     attributes:
       label: Game launcher
       description: Whats the name of the launcher youre using to play Minecraft since sometimes 3rd party clients can cause their own bugs and be harder to fix :p.
-      placeholder: e.g. Plain Fabric, Lunar, Curaeforge, Something rlse
+      placeholder: e.g. Plain Fabric, Lunar, Curseforge, Something else
     validations:
       required: true
 
