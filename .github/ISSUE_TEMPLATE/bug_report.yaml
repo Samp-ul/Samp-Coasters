@@ -62,7 +62,10 @@ body:
     attributes:
       label: What happened?
       description: Describe the problem, and what you expected to happen instead.
-      placeholder: The game crashes on the loading screen when... The game crashes when I try to do.. The game crashes when I use another mod...
+      placeholder: |
+           The game crashes on the loading screen when...
+           The game crashes when I try to do...
+           The game crashes when I use another mod...
     validations:
       required: true
 
@@ -120,4 +123,4 @@ body:
         - label: I searched the existing issues and this hasn't been reported yet.
           required: true
         - label: I'm using the latest version of this mod for my Minecraft version.
-          required: true
+          required: false
