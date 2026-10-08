@@ -1,6 +1,8 @@
 name: Bug or crash report
 description: Something isn't working, or the game crashes with this mod installed.
 labels: ["bug"]
+assignees:
+  - Samp-ul
 body:
   - type: markdown
     attributes:
