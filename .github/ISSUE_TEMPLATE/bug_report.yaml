@@ -11,7 +11,7 @@ body:
 
         **Crashing?** The crash report matters most. You'll find it in the `crash-reports` folder of your Minecraft instance. Attach it in the log box near the bottom.
         
-        **Note** Please make sure you're always on the latest version, as your issue could already be fixed! :)
+        **Note:** Please make sure you're always on the latest version, as your issue could already be fixed! :)
 
   - type: dropdown
     id: bug-or-crash
