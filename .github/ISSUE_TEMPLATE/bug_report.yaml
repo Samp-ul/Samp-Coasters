@@ -10,13 +10,15 @@ body:
         Thanks for reporting this! The more you fill in, the faster it can get fixed.
 
         **Crashing?** The crash report matters most. You'll find it in the `crash-reports` folder of your Minecraft instance. Attach it in the log box near the bottom.
+        **Note** Please make sure you're always on the latest version, as your issue could already be fixed! :)
 
-  - type: input
-    id: mod-version
+  - type: dropdown
+    id: bug-or-crash
     attributes:
-      label: Mod version
-      description: Shown in the mod's file name or in your launcher's mod list (ideally you should be using the latest version but just incase).
-      placeholder: e.g. 1.0.3
+      label: Was it a but or a crash?
+      options:
+        - I crashed :(
+        - I encountered a bug :(
     validations:
       required: true
 
@@ -28,22 +30,22 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: loader
+- type: input
+    id: launcher
     attributes:
-      label: Mod loader
-      options:
-        - Fabric
+      label: Game launcher
+      description: Whats the name of the launcher youre using to play Minecraft since sometimes 3rd party clients can cause their own bugs and be harder to fix :p.
+      placeholder: e.g. Plain Fabric, Lunar, Curaeforge, Something rlse
     validations:
       required: true
 
   - type: input
     id: loader-version
     attributes:
-      label: Loader version
+      label: Fabric Loader version
       description: Shown in your launcher, or near the top of the crash report.
     validations:
-      required: false
+      required: true
 
   - type: dropdown
     id: side
@@ -63,6 +65,9 @@ body:
       label: What happened?
       description: Describe the problem, and what you expected to happen instead.
       placeholder: |
+           Theres a bug when I...
+           A bug is stopping me from...
+           Something is bugged and wont work...
            The game crashes on the loading screen when...
            The game crashes when I try to do...
            The game crashes when I use another mod...
@@ -123,4 +128,4 @@ body:
         - label: I searched the existing issues and this hasn't been reported yet.
           required: true
         - label: I'm using the latest version of this mod for my Minecraft version.
-          required: false
+          required: true
