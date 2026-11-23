@@ -1,6 +1,6 @@
 <div align="center">
 
-# Samp Coasters
+<p align="center"><picture><img src="https://i.ibb.co/v4CfRmhQ/samp-costers-2.png" alt="" width="639"></picture></p>
 
 [![Available on CurseForge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/curseforge_vector.svg)](https://www.curseforge.com/minecraft/mc-mods/samp-coasters)
 [![Fabric](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/fabric_vector.svg)](https://fabricmc.net)
@@ -8,7 +8,7 @@
 
 ### Coasters are <u>*finally*</u> here, time to have some fun.
 
-Samp Coasters adds roller coasters to Create Fly. It runs on Fabric for Minecraft 26.1.2 and 26.2.
+Samp Coasters adds roller coasters to Create Fly. It runs on Fabric for Minecraft 26.1.2, 26.2, and 26.3!
 
 ***(find a full list of everything it does on curseforge)***
 
