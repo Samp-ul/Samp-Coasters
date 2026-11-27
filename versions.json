@@ -1,0 +1,21 @@
+{
+  "sampcoasters": {
+    "curseforgeUrl": "https://www.curseforge.com/minecraft/mc-mods/samp-coasters/files",
+    "latest": {
+      "26.1.2": "1.2.0",
+      "26.2": "1.2.0",
+      "26.3": "1.2.0"
+    },
+    "githubOverride": {
+      "enabled": false,
+      "force": false,
+      "url": "https://github.com/Samp-ul/Samp-Coasters/releases/latest",
+      "note": "Early release on GitHub while CurseForge reviews",
+      "latest": {
+        "26.1.2": "1.3.0",
+        "26.2": "1.3.0",
+        "26.3": "1.3.0"
+      }
+    }
+  }
+}
